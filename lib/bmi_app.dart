@@ -43,9 +43,9 @@ class _BmiScreenState extends State<BmiScreen> {
                           color: isMale ? Colors.red[400] : Colors.grey[900],
                           borderRadius: BorderRadius.circular(9.0),
                         ),
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
+                          children: [
                             Image(
                               height: 60.0,
                               width: 60.0,
@@ -68,7 +68,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 15.0,
                   ),
                   Expanded(
@@ -83,10 +83,10 @@ class _BmiScreenState extends State<BmiScreen> {
                           color: !isMale ? Colors.red[400] : Colors.grey[900],
                           borderRadius: BorderRadius.circular(9.0),
                         ),
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Image(
+                            Image(
                               height: 60.0,
                               width: 60.0,
                               color: Colors.white,
@@ -123,14 +123,14 @@ class _BmiScreenState extends State<BmiScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       'Height',
                       style: TextStyle(
                         color: Colors.white60,
                         fontSize: 17.0,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10.0,
                     ),
                     Row(
@@ -145,7 +145,7 @@ class _BmiScreenState extends State<BmiScreen> {
                               fontSize: 50.0,
                               color: Colors.white),
                         ),
-                        Text(
+                        const Text(
                           'cm',
                           style: TextStyle(
                             color: Colors.white60,
@@ -153,7 +153,7 @@ class _BmiScreenState extends State<BmiScreen> {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 15.0,
                     ),
                     Slider(
