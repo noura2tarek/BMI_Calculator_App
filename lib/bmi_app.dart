@@ -140,7 +140,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       children: [
                         Text(
                           '${height.round()}',
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontWeight: FontWeight.w900,
                               fontSize: 50.0,
                               color: Colors.white),
@@ -186,7 +186,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
+                          const Text(
                             'WEIGHT',
                             style: TextStyle(
                               color: Colors.white60,
@@ -194,7 +194,7 @@ class _BmiScreenState extends State<BmiScreen> {
                             ),
                           ),
                           Text(
-                            '${weight}',
+                            '$weight',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 50.0,
@@ -209,14 +209,14 @@ class _BmiScreenState extends State<BmiScreen> {
                                     weight--;
                                   });
                                 },
-                                child: Icon(
-                                  Icons.remove,
-                                  size: 25.0,
-                                ),
                                 backgroundColor: Colors.white38,
                                 mini: true,
                                 heroTag: 'weight-',
                                 foregroundColor: Colors.white,
+                                child: const Icon(
+                                  Icons.remove,
+                                  size: 25.0,
+                                ),
                               ),
                               FloatingActionButton(
                                 onPressed: () {
@@ -224,14 +224,14 @@ class _BmiScreenState extends State<BmiScreen> {
                                     weight++;
                                   });
                                 },
-                                child: Icon(
-                                  Icons.add,
-                                  size: 25.0,
-                                ),
                                 backgroundColor: Colors.white38,
                                 heroTag: 'weight+',
                                 mini: true,
                                 foregroundColor: Colors.white,
+                                child: const Icon(
+                                  Icons.add,
+                                  size: 25.0,
+                                ),
                               ),
                             ],
                           ),
@@ -259,7 +259,7 @@ class _BmiScreenState extends State<BmiScreen> {
                             ),
                           ),
                           Text(
-                            '${age}',
+                            '$age',
                             style: const TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 50.0,
@@ -274,14 +274,14 @@ class _BmiScreenState extends State<BmiScreen> {
                                     age--;
                                   });
                                 },
-                                child: Icon(
-                                  Icons.remove,
-                                  size: 25.0,
-                                ),
                                 mini: true,
                                 backgroundColor: Colors.white38,
                                 heroTag: 'age-',
                                 foregroundColor: Colors.white,
+                                child: const Icon(
+                                  Icons.remove,
+                                  size: 25.0,
+                                ),
                               ),
                               FloatingActionButton(
                                 onPressed: () {
@@ -289,14 +289,14 @@ class _BmiScreenState extends State<BmiScreen> {
                                     age++;
                                   });
                                 },
-                                child: Icon(
-                                  Icons.add,
-                                  size: 25.0,
-                                ),
                                 mini: true,
                                 backgroundColor: Colors.white38,
                                 heroTag: 'age+',
                                 foregroundColor: Colors.white,
+                                child: const Icon(
+                                  Icons.add,
+                                  size: 25.0,
+                                ),
                               ),
                             ],
                           ),
