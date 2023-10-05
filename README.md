@@ -1,10 +1,8 @@
 # bmi_calculator_app
 
-A new Flutter project.
+The App calculates body mass indicator and takes height, age, gender as inputs.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
